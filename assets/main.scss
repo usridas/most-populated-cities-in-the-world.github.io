@@ -1,0 +1,62 @@
+---
+---
+@import 'resources';
+
+html {
+  background: rgb(32,79,111);
+  background: linear-gradient(180deg, rgba(32,79,111,1) 0%, rgba(51,152,153,1) 100%);
+}
+
+body {
+  min-height: 100vh;
+}
+
+* {
+  text-align: center;
+}
+
+h1 {
+  font-family: $title-font;
+  font-weight: lighter;
+  font-size: 48px;
+  letter-spacing: 3px;
+  color: $sea-glass;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: $subtitle-font;
+  color: $sea-glass;
+  font-size: 26px;
+}
+
+h2 {
+  font-family: $header-font;
+  color: $gloomy-london;
+}
+
+p, a {
+  font-family: $text-font;
+  font-weight: bold;
+  color: $gloomy-london;
+}
+
+p {
+  margin: 5px 10px;
+}
+
+.construction {
+  color: $sea-glass;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+
+  width: 95vw;
+  margin: 20px auto;
+
+  @media (min-width: 450px) {
+    width: 65vw;
+  }
+}
